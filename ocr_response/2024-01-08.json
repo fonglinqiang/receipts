@@ -1,0 +1,257 @@
+{
+    "ocr_type": "receipts",
+    "request_id": "P_121.7.110.177_lr4nvvl1_4cp",
+    "ref_no": "oct_python_123",
+    "file_name": "2024-01-08.jpeg",
+    "request_received_on": 1704702552229,
+    "success": true,
+    "image_width": 900,
+    "image_height": 1600,
+    "image_rotation": -0.022,
+    "recognition_completed_on": 1704702553139,
+    "receipts": [
+        {
+            "merchant_name": "Ang Mo Supermarket Pte Ltd",
+            "merchant_address": "622B TAMPINES AVE 12, #01-10 S522622",
+            "merchant_phone": null,
+            "merchant_website": null,
+            "merchant_tax_reg_no": "M2-8923767-4",
+            "merchant_company_reg_no": null,
+            "region": null,
+            "mall": null,
+            "country": "SG",
+            "receipt_no": "TP622-3-00108228",
+            "date": "2024-01-08",
+            "time": "15:50",
+            "items": [
+                {
+                    "amount": 1.1,
+                    "category": null,
+                    "description": "2600601",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": 1.1
+                },
+                {
+                    "amount": 1.4,
+                    "category": null,
+                    "description": "8888090149050",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": 1.4
+                },
+                {
+                    "amount": 1.1,
+                    "category": null,
+                    "description": "2600690001103",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": 1.1
+                }
+            ],
+            "currency": "SGD",
+            "total": 3.6,
+            "subtotal": null,
+            "tax": 0.3,
+            "service_charge": null,
+            "tip": null,
+            "payment_method": "cash",
+            "payment_details": null,
+            "credit_card_type": null,
+            "credit_card_number": null,
+            "ocr_text": "           Ang Mo Supermarket Pte Ltd\n              622B TAMPINES AVE 12\n                #01-10 S522622\n            GST Reg No. M2-8923767-4\n Qty Description                  @Price Amount\n 1x VEGETABLES\n     2600601                        1.10     1.10\n 1x FORTUNE TAU KWA 2S 450G\n     8888090149050                  1.40     1.40\n 1x VEG OLD CUCUMBER\n     2600690001103                  1.10     1.10\n TOTAL                                 $3.60\n Cash                                  $4.00\n CHANGE                                $0.40\n 9% GST      0.30\n Total Quantity: 3\n Receipt: TP622-3-00108228 Terminal: 3 Shift:\n 01\n Date: 08/01/2024 15:50:05\n Cashier: TRAINEE",
+            "ocr_confidence": 96.93,
+            "width": 660,
+            "height": 590,
+            "avg_char_width": 14.3277,
+            "avg_line_height": 24.9289,
+            "conf_amount": 83,
+            "source_locations": {
+                "date": [
+                    [
+                        {
+                            "y": 1000,
+                            "x": 167
+                        },
+                        {
+                            "y": 994,
+                            "x": 449
+                        },
+                        {
+                            "y": 1024,
+                            "x": 450
+                        },
+                        {
+                            "y": 1030,
+                            "x": 168
+                        }
+                    ]
+                ],
+                "total": [
+                    [
+                        {
+                            "y": 798,
+                            "x": 594
+                        },
+                        {
+                            "y": 793,
+                            "x": 742
+                        },
+                        {
+                            "y": 817,
+                            "x": 743
+                        },
+                        {
+                            "y": 822,
+                            "x": 595
+                        }
+                    ]
+                ],
+                "receipt_no": [
+                    [
+                        {
+                            "y": 941,
+                            "x": 210
+                        },
+                        {
+                            "y": 938,
+                            "x": 445
+                        },
+                        {
+                            "y": 971,
+                            "x": 445
+                        },
+                        {
+                            "y": 974,
+                            "x": 210
+                        }
+                    ]
+                ],
+                "merchant_name": [
+                    [
+                        {
+                            "y": 470,
+                            "x": 199
+                        },
+                        {
+                            "y": 461,
+                            "x": 597
+                        },
+                        {
+                            "y": 492,
+                            "x": 598
+                        },
+                        {
+                            "y": 500,
+                            "x": 201
+                        }
+                    ]
+                ],
+                "doc": [
+                    [
+                        {
+                            "y": 444,
+                            "x": 41
+                        },
+                        {
+                            "y": 428,
+                            "x": 768
+                        },
+                        {
+                            "y": 1077,
+                            "x": 782
+                        },
+                        {
+                            "y": 1093,
+                            "x": 55
+                        }
+                    ]
+                ],
+                "tax": [
+                    [
+                        {
+                            "y": 890,
+                            "x": 255
+                        },
+                        {
+                            "y": 888,
+                            "x": 297
+                        },
+                        {
+                            "y": 906,
+                            "x": 299
+                        },
+                        {
+                            "y": 908,
+                            "x": 256
+                        }
+                    ]
+                ],
+                "merchant_address": [
+                    [
+                        {
+                            "y": 499,
+                            "x": 249
+                        },
+                        {
+                            "y": 492,
+                            "x": 553
+                        },
+                        {
+                            "y": 519,
+                            "x": 554
+                        },
+                        {
+                            "y": 527,
+                            "x": 250
+                        }
+                    ],
+                    [
+                        {
+                            "y": 528,
+                            "x": 280
+                        },
+                        {
+                            "y": 521,
+                            "x": 509
+                        },
+                        {
+                            "y": 550,
+                            "x": 510
+                        },
+                        {
+                            "y": 556,
+                            "x": 281
+                        }
+                    ]
+                ],
+                "merchant_tax_reg_no": [
+                    [
+                        {
+                            "y": 550,
+                            "x": 391
+                        },
+                        {
+                            "y": 545,
+                            "x": 578
+                        },
+                        {
+                            "y": 576,
+                            "x": 579
+                        },
+                        {
+                            "y": 581,
+                            "x": 392
+                        }
+                    ]
+                ]
+            }
+        }
+    ]
+}
