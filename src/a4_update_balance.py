@@ -7,7 +7,7 @@ def update_balance():
     balance_df = pd.read_csv('balance.csv', parse_dates=['date'])
 
     # Manually parse the datetime column in items_df
-    items_df['datetime'] = pd.to_datetime(items_df['datetime'], format='%d/%m/%Y %H:%M:%S')
+    items_df['datetime'] = pd.to_datetime(items_df['datetime'], format='%Y-%m-%d %H:%M:%S')
 
     # Find the most recent date in items.csv
     most_recent_date = items_df['datetime'].max()
@@ -34,3 +34,7 @@ def update_balance():
     print(f'Total sum of prices on {most_recent_date}: {total_sum}')
     print(f'Updated balance: {last_balance} - {total_sum} = {new_balance}')
     print('Updated balance.csv successfully.')
+
+
+if __name__ == "__main__":
+    update_balance()

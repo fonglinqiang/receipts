@@ -25,7 +25,8 @@ def transform_data():
 
     # convert date
     date_line_split = ocr_text_list[date_index].strip().split(' ')
-    receipt_date = f'{date_line_split[1]} {date_line_split[2]}'
+    receipt_date = convert_datetime_format(f'{date_line_split[1]} {date_line_split[2]}')
+    print(receipt_date)
 
     # extract description and price
     for i in range(description_index+1,total_index,2):
@@ -52,16 +53,16 @@ def remove_qty_from_description(my_list):
     return filtered_list
 
 
-# def convert_datetime_format(input_datetime_str):
-#     # Convert the input string to a datetime object using the original format
-#     original_format = "%d/%m/%Y %H:%M:%S"
-#     original_datetime = datetime.strptime(input_datetime_str, original_format)
+def convert_datetime_format(input_datetime_str):
+    # Convert the input string to a datetime object using the original format
+    original_format = "%d/%m/%Y %H:%M:%S"
+    original_datetime = datetime.strptime(input_datetime_str, original_format)
 
-#     # Convert the datetime object to a string with the desired format
-#     new_format = "%y/%m/%d %H:%M:%S"
-#     new_datetime_str = original_datetime.strftime(new_format)
+    # Convert the datetime object to a string with the desired format
+    new_format = "%Y-%m-%d %H:%M:%S"
+    new_datetime_str = original_datetime.strftime(new_format)
 
-#     return new_datetime_str
+    return new_datetime_str
 
 
 if __name__ == "__main__":
