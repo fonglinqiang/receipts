@@ -23,7 +23,7 @@ def update_balance():
     new_balance = last_balance - total_sum
 
     # Create a new row for balance_df with the most recent date and the updated balance
-    new_balance_row = {'date': most_recent_date, 'balance': new_balance}
+    new_balance_row = {'date': most_recent_date, 'balance': round(new_balance, 2)}
 
     # Append the new row to balance_df
     balance_df.loc[len(balance_df)] = new_balance_row
