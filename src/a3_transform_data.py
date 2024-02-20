@@ -65,8 +65,8 @@ def extract_data_sheng_siong(ocr_text_list):
             description_index = i
         if 'Sub Total' in line:
             total_index = i
-        if 'Receipt:' in line:
-            date_index = i-1
+        if 'Terminal' in line:
+            date_index = i
         if 'Sales Discount' in line:
             discount_index = i
         if 'Rounding Adjustment' in line:
@@ -74,6 +74,7 @@ def extract_data_sheng_siong(ocr_text_list):
 
     # convert date
     date_line = ocr_text_list[date_index]
+    date_line = ' '.join(date_line.split(' ')[-2:])
     original_format = "%d/%m/%Y %H:%M"
     receipt_date = convert_datetime_format(date_line.strip(),original_format)
     print(receipt_date)
